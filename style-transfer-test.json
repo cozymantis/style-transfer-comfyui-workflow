@@ -1,6 +1,6 @@
 {
-  "last_node_id": 103,
-  "last_link_id": 281,
+  "last_node_id": 116,
+  "last_link_id": 282,
   "nodes": [
     {
       "id": 16,
@@ -14,7 +14,7 @@
         "1": 106
       },
       "flags": {},
-      "order": 13,
+      "order": 26,
       "mode": 0,
       "inputs": [
         {
@@ -90,7 +90,7 @@
         "1": 517.061767578125
       },
       "flags": {},
-      "order": 41,
+      "order": 52,
       "mode": 0,
       "inputs": [
         {
@@ -115,7 +115,7 @@
         "1": 250
       },
       "flags": {},
-      "order": 25,
+      "order": 34,
       "mode": 0,
       "inputs": [
         {
@@ -194,77 +194,6 @@
       ]
     },
     {
-      "id": 54,
-      "type": "IPAdapterAdvanced",
-      "pos": [
-        450,
-        260
-      ],
-      "size": {
-        "0": 315,
-        "1": 278
-      },
-      "flags": {},
-      "order": 26,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 203
-        },
-        {
-          "name": "ipadapter",
-          "type": "IPADAPTER",
-          "link": 193,
-          "slot_index": 1
-        },
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 194
-        },
-        {
-          "name": "image_negative",
-          "type": "IMAGE",
-          "link": null
-        },
-        {
-          "name": "attn_mask",
-          "type": "MASK",
-          "link": null
-        },
-        {
-          "name": "clip_vision",
-          "type": "CLIP_VISION",
-          "link": 195,
-          "slot_index": 5
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            196
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "IPAdapterAdvanced"
-      },
-      "widgets_values": [
-        0.9,
-        "style transfer (SDXL)",
-        "concat",
-        0,
-        1,
-        "V only"
-      ]
-    },
-    {
       "id": 58,
       "type": "KSampler",
       "pos": [
@@ -276,7 +205,7 @@
         "1": 474
       },
       "flags": {},
-      "order": 30,
+      "order": 41,
       "mode": 0,
       "inputs": [
         {
@@ -421,7 +350,7 @@
         "1": 517.061767578125
       },
       "flags": {},
-      "order": 38,
+      "order": 49,
       "mode": 0,
       "inputs": [
         {
@@ -446,7 +375,7 @@
         "1": 46
       },
       "flags": {},
-      "order": 34,
+      "order": 45,
       "mode": 0,
       "inputs": [
         {
@@ -486,7 +415,7 @@
         "1": 130
       },
       "flags": {},
-      "order": 17,
+      "order": 27,
       "mode": 0,
       "inputs": [
         {
@@ -530,7 +459,7 @@
         "1": 46
       },
       "flags": {},
-      "order": 36,
+      "order": 51,
       "mode": 0,
       "inputs": [
         {
@@ -570,13 +499,13 @@
         "1": 274
       },
       "flags": {},
-      "order": 28,
+      "order": 43,
       "mode": 0,
       "inputs": [
         {
           "name": "model",
           "type": "MODEL",
-          "link": 240
+          "link": 282
         },
         {
           "name": "vae",
@@ -670,7 +599,7 @@
         "1": 46
       },
       "flags": {},
-      "order": 24,
+      "order": 33,
       "mode": 0,
       "inputs": [
         {
@@ -712,7 +641,7 @@
         "1": 46
       },
       "flags": {},
-      "order": 37,
+      "order": 48,
       "mode": 0,
       "inputs": [
         {
@@ -752,7 +681,7 @@
         "1": 76
       },
       "flags": {},
-      "order": 20,
+      "order": 29,
       "mode": 0,
       "inputs": [
         {
@@ -800,7 +729,7 @@
         "1": 76
       },
       "flags": {},
-      "order": 16,
+      "order": 32,
       "mode": 0,
       "inputs": [
         {
@@ -834,7 +763,7 @@
         "Node name for S&R": "CLIPTextEncode"
       },
       "widgets_values": [
-        "human"
+        ""
       ]
     },
     {
@@ -849,7 +778,7 @@
         "1": 76
       },
       "flags": {},
-      "order": 19,
+      "order": 31,
       "mode": 0,
       "inputs": [
         {
@@ -882,7 +811,7 @@
         "Node name for S&R": "CLIPTextEncode"
       },
       "widgets_values": [
-        "girl on skateboard, cartoon style, purple tint"
+        "cartoon style, purple tint, lines"
       ]
     },
     {
@@ -897,7 +826,7 @@
         "1": 130
       },
       "flags": {},
-      "order": 18,
+      "order": 28,
       "mode": 0,
       "inputs": [
         {
@@ -940,7 +869,7 @@
         "1": 46
       },
       "flags": {},
-      "order": 42,
+      "order": 53,
       "mode": 2,
       "inputs": [
         {
@@ -967,46 +896,6 @@
       "properties": {
         "Node name for S&R": "VAEDecode"
       }
-    },
-    {
-      "id": 74,
-      "type": "SelfAttentionGuidance",
-      "pos": [
-        -790,
-        -150
-      ],
-      "size": {
-        "0": 315,
-        "1": 82
-      },
-      "flags": {},
-      "order": 14,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 229
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            240
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "SelfAttentionGuidance"
-      },
-      "widgets_values": [
-        0.7000000000000001,
-        2
-      ]
     },
     {
       "id": 95,
@@ -1116,7 +1005,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 15,
+      "order": 30,
       "mode": 0,
       "inputs": [
         {
@@ -1146,56 +1035,6 @@
       ]
     },
     {
-      "id": 68,
-      "type": "CheckpointLoaderSimple",
-      "pos": [
-        -790,
-        -290
-      ],
-      "size": {
-        "0": 315,
-        "1": 98
-      },
-      "flags": {},
-      "order": 8,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            229,
-            267
-          ],
-          "slot_index": 0
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            228
-          ],
-          "slot_index": 1
-        },
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            226,
-            239,
-            266
-          ],
-          "slot_index": 2
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CheckpointLoaderSimple"
-      },
-      "widgets_values": [
-        "v1-5-pruned-emaonly.safetensors"
-      ]
-    },
-    {
       "id": 94,
       "type": "CLIPVisionEncode",
       "pos": [
@@ -1207,7 +1046,7 @@
         "1": 50
       },
       "flags": {},
-      "order": 31,
+      "order": 42,
       "mode": 2,
       "inputs": [
         {
@@ -1248,7 +1087,7 @@
         "1": 76
       },
       "flags": {},
-      "order": 21,
+      "order": 37,
       "mode": 0,
       "inputs": [
         {
@@ -1280,7 +1119,7 @@
         "Node name for S&R": "CLIPTextEncode"
       },
       "widgets_values": [
-        "girl on skateboard, cartoon style, purple tint"
+        "cartoon style, purple tint, lines"
       ]
     },
     {
@@ -1295,7 +1134,7 @@
         "1": 76
       },
       "flags": {},
-      "order": 23,
+      "order": 39,
       "mode": 0,
       "inputs": [
         {
@@ -1327,7 +1166,7 @@
         "Node name for S&R": "CLIPTextEncode"
       },
       "widgets_values": [
-        "human"
+        ""
       ]
     },
     {
@@ -1342,7 +1181,7 @@
         "1": 517.061767578125
       },
       "flags": {},
-      "order": 43,
+      "order": 55,
       "mode": 2,
       "inputs": [
         {
@@ -1367,7 +1206,7 @@
         "1": 70
       },
       "flags": {},
-      "order": 35,
+      "order": 46,
       "mode": 2,
       "inputs": [
         {
@@ -1415,7 +1254,7 @@
         "1": 76
       },
       "flags": {},
-      "order": 22,
+      "order": 38,
       "mode": 0,
       "inputs": [
         {
@@ -1451,41 +1290,6 @@
       ]
     },
     {
-      "id": 91,
-      "type": "PrimitiveNode",
-      "pos": [
-        -790,
-        450
-      ],
-      "size": {
-        "0": 210,
-        "1": 76
-      },
-      "flags": {},
-      "order": 9,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            251,
-            253
-          ],
-          "widget": {
-            "name": "text"
-          },
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Run widget replace on values": false
-      },
-      "widgets_values": [
-        "human"
-      ]
-    },
-    {
       "id": 96,
       "type": "KSampler",
       "pos": [
@@ -1497,7 +1301,7 @@
         "1": 474
       },
       "flags": {},
-      "order": 39,
+      "order": 50,
       "mode": 2,
       "inputs": [
         {
@@ -1556,7 +1360,7 @@
         "1": 106
       },
       "flags": {},
-      "order": 27,
+      "order": 36,
       "mode": 2,
       "inputs": [
         {
@@ -1597,7 +1401,7 @@
         "1": 588.647705078125
       },
       "flags": {},
-      "order": 10,
+      "order": 8,
       "mode": 0,
       "outputs": [
         {
@@ -1626,41 +1430,6 @@
       ]
     },
     {
-      "id": 89,
-      "type": "PrimitiveNode",
-      "pos": [
-        -790,
-        230
-      ],
-      "size": {
-        "0": 210,
-        "1": 76
-      },
-      "flags": {},
-      "order": 11,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            249,
-            254
-          ],
-          "slot_index": 0,
-          "widget": {
-            "name": "text"
-          }
-        }
-      ],
-      "properties": {
-        "Run widget replace on values": false
-      },
-      "widgets_values": [
-        "girl on skateboard, cartoon style, purple tint"
-      ]
-    },
-    {
       "id": 67,
       "type": "KSampler",
       "pos": [
@@ -1672,7 +1441,7 @@
         "1": 474
       },
       "flags": {},
-      "order": 32,
+      "order": 47,
       "mode": 0,
       "inputs": [
         {
@@ -1728,10 +1497,10 @@
       ],
       "size": {
         "0": 210,
-        "1": 76
+        "1": 80
       },
       "flags": {},
-      "order": 12,
+      "order": 9,
       "mode": 0,
       "outputs": [
         {
@@ -1766,7 +1535,7 @@
         "1": 517.061767578125
       },
       "flags": {},
-      "order": 40,
+      "order": 54,
       "mode": 0,
       "inputs": [
         {
@@ -1791,7 +1560,7 @@
         "1": 206
       },
       "flags": {},
-      "order": 29,
+      "order": 40,
       "mode": 0,
       "inputs": [
         {
@@ -1863,7 +1632,7 @@
         "1": 534
       },
       "flags": {},
-      "order": 33,
+      "order": 44,
       "mode": 0,
       "inputs": [
         {
@@ -1931,6 +1700,496 @@
         "fixed",
         11
       ]
+    },
+    {
+      "id": 104,
+      "type": "Note",
+      "pos": [
+        -1020,
+        230
+      ],
+      "size": [
+        210,
+        80
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "describe your reference style, focusing on the style aspects you want to capture"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 68,
+      "type": "CheckpointLoaderSimple",
+      "pos": [
+        -790,
+        -160
+      ],
+      "size": {
+        "0": 315,
+        "1": 98
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            267,
+            282
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            228
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            226,
+            239,
+            266
+          ],
+          "slot_index": 2
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CheckpointLoaderSimple"
+      },
+      "widgets_values": [
+        "v1-5-pruned-emaonly.safetensors"
+      ]
+    },
+    {
+      "id": 105,
+      "type": "Note",
+      "pos": [
+        -1020,
+        340
+      ],
+      "size": {
+        "0": 210,
+        "1": 80
+      },
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "the positive prompt for the generated images"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 106,
+      "type": "Note",
+      "pos": [
+        -1020,
+        450
+      ],
+      "size": {
+        "0": 210,
+        "1": 80
+      },
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "the negative prompt for the generated images"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 107,
+      "type": "Note",
+      "pos": [
+        -1020,
+        570
+      ],
+      "size": {
+        "0": 210,
+        "1": 80
+      },
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "the reference style image - will be cropped to a square"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 109,
+      "type": "Note",
+      "pos": [
+        -1020,
+        -30
+      ],
+      "size": [
+        210,
+        60
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "adjust as needed by checkpoint"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 108,
+      "type": "Note",
+      "pos": [
+        -1020,
+        80
+      ],
+      "size": [
+        210,
+        60
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "the XL checkpoint"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 110,
+      "type": "Note",
+      "pos": [
+        -1020,
+        -160
+      ],
+      "size": {
+        "0": 210,
+        "1": 60
+      },
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "the 1.5 checkpoint"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 111,
+      "type": "Note",
+      "pos": [
+        560,
+        1240
+      ],
+      "size": {
+        "0": 210,
+        "1": 60
+      },
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "share_attn = q+k+v gives more powerful results at the price of quality"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 112,
+      "type": "Note",
+      "pos": [
+        560,
+        1340
+      ],
+      "size": {
+        "0": 210,
+        "1": 60
+      },
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "experiment with share_norm too"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 54,
+      "type": "IPAdapterAdvanced",
+      "pos": [
+        450,
+        260
+      ],
+      "size": {
+        "0": 315,
+        "1": 278
+      },
+      "flags": {},
+      "order": 35,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 203
+        },
+        {
+          "name": "ipadapter",
+          "type": "IPADAPTER",
+          "link": 193,
+          "slot_index": 1
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 194
+        },
+        {
+          "name": "image_negative",
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "attn_mask",
+          "type": "MASK",
+          "link": null
+        },
+        {
+          "name": "clip_vision",
+          "type": "CLIP_VISION",
+          "link": 195,
+          "slot_index": 5
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            196
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "IPAdapterAdvanced"
+      },
+      "widgets_values": [
+        0.9,
+        "style transfer (SDXL)",
+        "concat",
+        0,
+        1,
+        "V only"
+      ]
+    },
+    {
+      "id": 114,
+      "type": "Note",
+      "pos": [
+        450,
+        580
+      ],
+      "size": {
+        "0": 210,
+        "1": 60
+      },
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "experiment with weight, start_at, end_at, embeds_scaling"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 113,
+      "type": "Note",
+      "pos": [
+        460,
+        -470
+      ],
+      "size": {
+        "0": 210,
+        "1": 60
+      },
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "experiment with turning on and off blocks above"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 115,
+      "type": "Note",
+      "pos": [
+        470,
+        -1690
+      ],
+      "size": [
+        240,
+        60
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "this branch may not work in the same run as the visual style prompting branch, see readme"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 89,
+      "type": "PrimitiveNode",
+      "pos": [
+        -790,
+        230
+      ],
+      "size": {
+        "0": 210,
+        "1": 80
+      },
+      "flags": {},
+      "order": 23,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            249,
+            254
+          ],
+          "slot_index": 0,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        "cartoon style, purple tint, lines"
+      ]
+    },
+    {
+      "id": 91,
+      "type": "PrimitiveNode",
+      "pos": [
+        -790,
+        450
+      ],
+      "size": {
+        "0": 210,
+        "1": 80
+      },
+      "flags": {},
+      "order": 24,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            251,
+            253
+          ],
+          "widget": {
+            "name": "text"
+          },
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Run widget replace on values": false
+      },
+      "widgets_values": [
+        ""
+      ]
+    },
+    {
+      "id": 116,
+      "type": "Note",
+      "pos": [
+        -880,
+        -300
+      ],
+      "size": [
+        400,
+        80
+      ],
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "Made with 💚 by the CozyMantis squad.\n\nhttps://cozymantis.telepat.io"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
     }
   ],
   "links": [
@@ -2239,14 +2498,6 @@
       "CLIP"
     ],
     [
-      229,
-      68,
-      0,
-      74,
-      0,
-      "MODEL"
-    ],
-    [
       230,
       75,
       0,
@@ -2309,14 +2560,6 @@
       76,
       1,
       "VAE"
-    ],
-    [
-      240,
-      74,
-      0,
-      76,
-      0,
-      "MODEL"
     ],
     [
       241,
@@ -2517,6 +2760,14 @@
       96,
       2,
       "CONDITIONING"
+    ],
+    [
+      282,
+      68,
+      0,
+      76,
+      0,
+      "MODEL"
     ]
   ],
   "groups": [],
