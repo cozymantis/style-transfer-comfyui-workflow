@@ -95,3 +95,7 @@ When loading the workflow, the ControlNet branch is disabled by default. You can
 ## More Good Stuff
 
 Made with 💚 by the [CozyMantis](https://cozymantis.gumroad.com) squad. Check out our ComfyUI nodes and workflows!
+
+| | |
+| --- | --- |
+| <a href="https://cozymantis.gumroad.com/l/cozy-animated-portraits-with-stablediffusion-comfyui-aniportrait?layout=profile"><img width=200 src="https://public-files.gumroad.com/uspwrlry6dkb927zjihozv1xo88p"><br />Cozy Portrait Animator - ComfyUI Nodes & Workflow To Animate A Face From A Single Image</a> | <a href="https://cozymantis.gumroad.com/l/cozy-clothes-swap-comfyui-node-salvton?layout=profile"><img width=200 src="https://public-files.gumroad.com/x75wxfap89vzrasn4v6rniemyaj5"><br /> Cozy Clothes Swap - Customizable ComfyUI Node For Fashion Try-on</a> |
