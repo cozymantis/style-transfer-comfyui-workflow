@@ -53,7 +53,7 @@ This repository contains a workflow to test different style transfer methods usi
 - Models you'll need:
   - SD 1.5 Style ControlNet Coadapter: https://huggingface.co/TencentARC/T2I-Adapter/blob/main/models/coadapter-style-sd15v1.pth (add to `models/controlnet`)
   - Clip Vision Large: https://huggingface.co/openai/clip-vit-large-patch14/blob/main/pytorch_model.bin (add to `models/clip_vision`)
-  - Open Clip: https://huggingface.co/laion/CLIP-ViT-H-14-laion2B-s32B-b79K/blob/main/open_clip_pytorch_model.safetensors (add to `models/clip_vision`)
+  - OpenCLIP: https://huggingface.co/laion/CLIP-ViT-H-14-laion2B-s32B-b79K/blob/main/open_clip_pytorch_model.safetensors (add to `models/clip_vision`)
   - SD XL IPAdapter: https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter-plus_sdxl_vit-h.safetensors (add to `models/ipadapter`)
   - An SD 1.5 checkpoint
   - An SD XL checkpoint
