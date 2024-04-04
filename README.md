@@ -60,6 +60,14 @@ This repository contains a workflow to test different style transfer methods usi
 
 ## Notes
 
+For the purpose of this test, we tried to keep prompts as simple as possible, and **not include style details in the generating prompt**. This way, we aim to test each style transfer method in a more isolated/prompt independent way. 
+
+**For the best results, you should engineer the prompts to better fit your needs.**
+
+Make sure to read the documentation of each method and each ComfyUI node to understand how to use them properly.
+
+When loading the workflow, the ControlNet branch is disabled by default. You can enable it by selecting all the top nodes, and pressing CTRL+M. This is because the current implementation of Visual Style Prompting is incompatible with the ControlNet style model (see below). You need to use them one at a time, and restart ComfyUI if you want to switch between them.
+
 ### SD 1.5 Style ControlNet Coadapter
 - tends to also capture and transfer semantic information from the reference image;
 - no parameters to tweak;
