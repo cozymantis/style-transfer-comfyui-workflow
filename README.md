@@ -1,0 +1,87 @@
+# Style Transfer with Stable Diffusion - ComfyUI Workflow To Test Style Transfer Methods
+
+This repository contains a workflow to test different style transfer methods using Stable Diffusion. The workflow is based on ComfyUI, which is a user-friendly interface for running Stable Diffusion models. The workflow is designed to test different style transfer methods from a single reference image.
+
+## Evaluated Methods
+
+- **The SD 1.5 Style ControlNet Coadapter**
+  - Required nodes are built into ComfyUI
+  - Docs: https://github.com/TencentARC/T2I-Adapter/blob/SD/docs/coadapter.md
+- **Visual Style Prompt for SD 1.5**
+  - ComfyUI node: https://github.com/ExponentialML/ComfyUI_VisualStylePrompting
+  - Project page: https://curryjung.github.io/VisualStylePrompt/
+- **The SD XL IPAdapter** with style transfer weight types
+  - ComfyUI node: https://github.com/cubiq/ComfyUI_IPAdapter_plus
+  - Project page: https://ip-adapter.github.io/
+- **StyleAligned for SD XL**
+  - ComfyUI node: https://github.com/brianfitzgerald/style_aligned_comfy
+  - Project page: https://style-aligned-gen.github.io/
+
+## Results
+
+**Original Image**
+![](./assets/source1.png)
+
+| Style Method               | `an elephant` | `a robot` | `a car` |
+| -------------------------- | --- | --- | --- |
+| SD 1.5 Style Adapter         | ![](./assets/sm.png) | ![](./assets/sm1.png) | ![](./assets/sm2.png) |
+| SD 1.5 Visual Style Prompt | ![](./assets/vsp.png) | ![](./assets/vsp1.png) | ![](./assets/vsp2.png) |
+| SD XL IPAdapter            | ![](./assets/ipa.png) | ![](./assets/ipa1.png) | ![](./assets/ipa2.png) |
+| SD XL StyleAligned         | ![](./assets/sa.png) | ![](./assets/sa1.png) | ![](./assets/sa2.png) |
+
+
+
+**Original Image**
+![](./assets/source2.png)
+
+| Style Method               | `an elephant` | `a robot` | `a car` |
+| -------------------------- | --- | --- | --- |
+| SD 1.5 Style Adapter         | ![](./assets/2sm.png) | ![](./assets/2sm1.png) | ![](./assets/2sm2.png) |
+| SD 1.5 Visual Style Prompt | ![](./assets/2vsp.png) | ![](./assets/2vsp1.png) | ![](./assets/2vsp2.png) |
+| SD XL IPAdapter            | ![](./assets/2ipa.png) | ![](./assets/2ipa1.png) | ![](./assets/2ipa2.png) |
+| SD XL StyleAligned         | ![](./assets/2sa.png) | ![](./assets/2sa1.png) | ![](./assets/2sa2.png) |
+
+## Installation
+
+- Custom nodes you'll need:
+  - https://github.com/ExponentialML/ComfyUI_VisualStylePrompting
+  - https://github.com/cubiq/ComfyUI_IPAdapter_plus
+  - https://github.com/brianfitzgerald/style_aligned_comfy
+
+- Models you'll need:
+  - SD 1.5 Style ControlNet Coadapter: https://huggingface.co/TencentARC/T2I-Adapter/blob/main/models/coadapter-style-sd15v1.pth (add to `models/controlnet`)
+  - Clip Vision Large: https://huggingface.co/openai/clip-vit-large-patch14/blob/main/pytorch_model.bin (add to `models/clip_vision`)
+  - Open Clip: https://huggingface.co/laion/CLIP-ViT-H-14-laion2B-s32B-b79K/blob/main/open_clip_pytorch_model.safetensors (add to `models/clip_vision`)
+  - SD XL IPAdapter: https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter-plus_sdxl_vit-h.safetensors (add to `models/ipadapter`)
+  - An SD 1.5 checkpoint
+  - An SD XL checkpoint
+
+## Notes
+
+### SD 1.5 Style ControlNet Coadapter
+- tends to also capture and transfer semantic information from the reference image;
+- no parameters to tweak;
+- we spent a lot of time fishing for good seeds to cherry pick the best results.
+
+### Visual Style Prompt for SD 1.5
+- in order to get the best results, you must engineer both the positive and reference image prompts correctly;
+- focus on the details you want to derive from the image reference, and the details you wish to see in the output;
+- in the current implementation, the custom node we used updates model attention in a way that is incompatible with applying controlnet style models via the "Apply Style Model" node;
+- once you run the "Apply Visual Style Prompting" node, you won't be able to apply the controlnet style model anymore and need to restart ComfyUI if you plan to do so;
+- this method tends to produce more abstract/creative results, which can be a good thing if you're looking for a more artistic output.
+
+### SD XL IPAdapter
+- The style transfer weight types are a feature of the IPAdapter v2 node for SD XL only;
+- Outputs are consistently good and style-aligned with the original;
+- Tends to focus on/add detail to faces;
+- `Weight`/`start at`/`end at` are adjustable parameters;
+- Maybe the best style transfer method at the time of writing this.
+
+### StyleAligned for SD XL
+- The StyleAligned method is a bit more complex to use, but it's worth the effort;
+- Outputs are good but it looks like some semantics are also transfered;
+- Allows customization via the `share_attn` and `share_norm` parameters.
+
+## More Good Stuff
+
+Made with 💚 by the [CozyMantis](https://cozymantis.gumroad.com) squad. Check out our ComfyUI nodes and workflows!
