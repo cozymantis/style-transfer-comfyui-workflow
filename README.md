@@ -70,6 +70,7 @@ When loading the workflow, the ControlNet branch is disabled by default. You can
 
 ### SD 1.5 Style ControlNet Coadapter
 - tends to also capture and transfer semantic information from the reference image;
+- you can use this together with other controlnets for better composition results;
 - no parameters to tweak;
 - we spent a lot of time fishing for good seeds to cherry pick the best results.
 
