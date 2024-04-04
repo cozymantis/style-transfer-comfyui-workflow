@@ -17,6 +17,8 @@ This repository contains a workflow to test different style transfer methods usi
   - ComfyUI node: https://github.com/brianfitzgerald/style_aligned_comfy
   - Project page: https://style-aligned-gen.github.io/
 
+![](screen.png)
+
 ## Results
 
 **Original Image**
