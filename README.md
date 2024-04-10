@@ -22,18 +22,6 @@ This repository contains a workflow to test different style transfer methods usi
 ## Results
 
 **Original Image**
-![](./assets/source1.png)
-
-| Style Method               | `an elephant` | `a robot` | `a car` |
-| -------------------------- | --- | --- | --- |
-| SD 1.5 Style Adapter         | ![](./assets/sm.png) | ![](./assets/sm1.png) | ![](./assets/sm2.png) |
-| SD 1.5 Visual Style Prompt | ![](./assets/vsp.png) | ![](./assets/vsp1.png) | ![](./assets/vsp2.png) |
-| SD XL IPAdapter            | ![](./assets/ipa.png) | ![](./assets/ipa1.png) | ![](./assets/ipa2.png) |
-| SD XL StyleAligned         | ![](./assets/sa.png) | ![](./assets/sa1.png) | ![](./assets/sa2.png) |
-
-
-
-**Original Image**
 ![](./assets/source2.png)
 
 | Style Method               | `an elephant` | `a robot` | `a car` |
